@@ -9,6 +9,11 @@ export class CounterComponent implements OnInit {
 
   constructor() { }
 
+  // public id: number,
+  // public name: string,
+  // public power: string,
+  // public alterEgo?: string
+
   ngOnInit() {
   }
 
@@ -23,6 +28,7 @@ export class CounterComponent implements OnInit {
 
   scade(){
     this.valoare--;
-  } 
+  }
+
 
 }

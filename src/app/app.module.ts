@@ -9,6 +9,7 @@ import { CounterWithServiceComponent } from './ui/counter-with-service/counter-w
 import {CounterService} from './services/counter/counter.service';
 import { HeaderComponent } from './ui/header/header.component';
 import { FooterComponent } from './ui/footer/footer.component';
+import { ValidationExampleComponent } from './ui/validation-example/validation-example.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { FooterComponent } from './ui/footer/footer.component';
     CounterWithServiceComponent,
 
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ValidationExampleComponent
   ],
   imports: [
     BrowserModule,
