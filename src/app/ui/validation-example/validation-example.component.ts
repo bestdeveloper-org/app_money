@@ -15,7 +15,6 @@ export class ValidationExampleComponent implements OnInit {
   ngOnInit() {
   }
 
-
   powers = ['Really Smart', 'Super Flexible', 'Weather Changer'];
 
   hero: any = {
