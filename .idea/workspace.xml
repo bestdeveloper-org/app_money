@@ -2,54 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="070b5b5c-8d67-4791-ac3c-f694adb79ca1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/.angular-cli.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/e2e/app.e2e-spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/e2e/app.po.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/e2e/tsconfig.e2e.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/karma.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/protractor.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/app/app.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/app/app.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/app/app.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/app/app.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/app/app.module.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/app/services/counter/counter.service.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/app/services/counter/counter.service.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/app/ui/counter-with-service/counter-with-service.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/app/ui/counter-with-service/counter-with-service.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/app/ui/counter-with-service/counter-with-service.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/app/ui/counter-with-service/counter-with-service.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/app/ui/counter/counter.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/app/ui/counter/counter.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/app/ui/counter/counter.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/app/ui/counter/counter.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/app/ui/footer/footer.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/app/ui/footer/footer.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/app/ui/footer/footer.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/app/ui/footer/footer.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/app/ui/header/header.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/app/ui/header/header.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/app/ui/header/header.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/app/ui/header/header.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/assets/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/environments/environment.prod.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/environments/environment.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/main.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/polyfills.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/test.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/tsconfig.app.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/tsconfig.spec.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/src/typings.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/tsconfig.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_money/tslint.json" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/ui/counter/counter.component.html" afterPath="$PROJECT_DIR$/src/app/ui/counter/counter.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/ui/counter/counter.component.ts" afterPath="$PROJECT_DIR$/src/app/ui/counter/counter.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/ui/validation-example/validation-example.component.html" afterPath="$PROJECT_DIR$/src/app/ui/validation-example/validation-example.component.html" />
     </list>
     <ignored path="app_money.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,30 +30,28 @@
       <file leaf-file-name="counter.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/ui/counter/counter.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="74" selection-end-column="7" />
-              <folding>
-                <element signature="n#form#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="counter.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/ui/counter/counter.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="357">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="validation-example.component.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="counter.component.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/ui/counter/counter.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="validation-example.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/ui/validation-example/validation-example.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
-              <caret line="49" column="2" selection-start-line="49" selection-start-column="2" selection-end-line="49" selection-end-column="2" />
+              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -134,11 +87,11 @@
       <list>
         <option value="$PROJECT_DIR$/app_money/src/app/ui/counter/counter.component.html" />
         <option value="$PROJECT_DIR$/app_money/src/app/app.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/ui/counter/counter.component.html" />
-        <option value="$PROJECT_DIR$/src/app/ui/counter/counter.component.ts" />
         <option value="$PROJECT_DIR$/src/app/ui/validation-example/validation-example.component.ts" />
         <option value="$PROJECT_DIR$/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/src/app/ui/validation-example/validation-example.component.html" />
+        <option value="$PROJECT_DIR$/src/app/ui/counter/counter.component.html" />
+        <option value="$PROJECT_DIR$/src/app/ui/counter/counter.component.ts" />
       </list>
     </option>
   </component>
@@ -383,12 +336,12 @@
       <updated>1520003730546</updated>
       <workItem from="1520003731678" duration="602000" />
       <workItem from="1520319611823" duration="376000" />
-      <workItem from="1520320222570" duration="1308000" />
+      <workItem from="1520320222570" duration="1420000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2286000" />
+    <option name="totallyTimeSpent" value="2398000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1932" height="1047" extended-state="0" />
@@ -439,24 +392,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/ui/counter/counter.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="74" selection-end-column="7" />
-          <folding>
-            <element signature="n#form#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/ui/counter/counter.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -468,7 +403,23 @@
     <entry file="file://$PROJECT_DIR$/src/app/ui/validation-example/validation-example.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="49" column="2" selection-start-line="49" selection-start-column="2" selection-end-line="49" selection-end-column="2" />
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/ui/counter/counter.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/ui/counter/counter.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
           <folding />
         </state>
       </provider>
