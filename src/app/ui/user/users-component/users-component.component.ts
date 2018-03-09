@@ -14,7 +14,8 @@ export class UsersComponentComponent implements OnInit {
 
   ngOnInit() {
   }
-  var model  = {
+  
+  var model = {
     firstname : "",
     lastname : ""
   };
