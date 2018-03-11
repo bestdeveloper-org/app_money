@@ -1,0 +1,67 @@
+
+<div class="container">
+  <div class="row">
+
+    <div class="main">
+
+      <h3>Please Log In, or <a href="#">Sign Up</a></h3>
+      <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6">
+          <a href="#" class="btn btn-lg btn-primary btn-block">Facebook</a>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6">
+          <a href="#" class="btn btn-lg btn-info btn-block">Google</a>
+        </div>
+      </div>
+      <div class="login-or">
+        <hr class="hr-or">
+        <span class="span-or">or</span>
+      </div>
+
+      <form role="form">
+        <div class="form-group"
+                  [ngClass]="{
+                 'has-danger':email.valid && (email.dirty || email.touched),
+                 'has-success': email.invalid && (email.dirty || email.touched)
+                  }">
+          <label for="inputUsernameEmail">Username or email</label>
+          <input type="email"
+                 class="form-control"
+                 id="inputUsernameEmail"
+                 formControlName="email">
+          <div class="form-control-feedback"
+               *ngIf="email.errors && (email.dirty || email.touched)">
+            <p *ngIf="email.errors.required">Email is required</p>
+            <p *ngIf="email.errors.pattern">Email must contain @</p>
+          </div>
+          </div>
+        <div class="form-group"
+                  [ngClass]="{
+                 'has-danger': password.invalid && (password.dirty || password.touched),
+                 'has-success': password.valid && (password.dirty || password.touched)}">
+          <a class="pull-right" href="#">Forgot password?</a>
+          <label for="inputPassword">Password</label>
+          <input type="password"
+                 class="form-control"
+                 id="inputPassword"
+                 formControlName="password"
+                 required>
+          <div *ngIf="password.errors.required && (password.dirty || password.touched)" class="alert alert-danger">
+                 <div [hidden]="!password.errors.required">Password is required</div>
+          </div>
+          <div *ngIf="password.errors.minLength && (password.dirty || password.touched)" class="alert alert-danger">
+            <div [hidden]="!password.errors.minLength">Password must be 8 characters long, we need another</div>
+          </div>
+        </div>
+        <div class="checkbox pull-right">
+          <label>
+            <input type="checkbox">
+            Remember me </label>
+        </div>
+        <button type="submit" class="btn btn btn-primary">
+          Log In
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
