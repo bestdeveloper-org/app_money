@@ -1,5 +1,7 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import {NgForm} from "@angular/forms";
+import { Component, OnInit } from '@angular/core';
+//import { NgForm } from "@angular/forms";
+import { User } from '../user.model';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-users-component',
@@ -7,17 +9,21 @@ import {NgForm} from "@angular/forms";
   styleUrls: ['./users-component.component.css']
 })
 export class UsersComponentComponent implements OnInit {
-	
-	@ViewChild('model') currentForm: NgForm;
-	
+  get model(): User {
+    return this._model;
+  }
+
+  set model(value: User) {
+    this._model = value;
+  }
+
+	//@ViewChild('model') currentForm: NgForm;
+
+	private _model = new User('','','','','');
+
   constructor() { }
 
   ngOnInit() {
   }
-  
-  var model = {
-    firstname : "",
-    lastname : ""
-  };
 
 }

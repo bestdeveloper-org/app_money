@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 
+import { EqualValidator } from './ui/user/equal-validator.directive';
 import { AppComponent } from './app.component';
 import { CounterComponent } from './ui/counter/counter.component';
 import { CounterWithServiceComponent } from './ui/counter-with-service/counter-with-service.component';
@@ -20,7 +21,8 @@ import { UsersComponentComponent } from './ui/user/users-component/users-compone
 
     HeaderComponent,
     FooterComponent,
-    UsersComponentComponent
+    UsersComponentComponent,
+    EqualValidator
   ],
   imports: [
     BrowserModule,
