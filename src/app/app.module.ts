@@ -10,6 +10,7 @@ import {CounterService} from './services/counter/counter.service';
 import { HeaderComponent } from './ui/header/header.component';
 import { FooterComponent } from './ui/footer/footer.component';
 import { ValidationExampleComponent } from './ui/validation-example/validation-example.component';
+import {LoginComponent} from "./ui/login/login.component";
 
 
 @NgModule({
@@ -17,7 +18,7 @@ import { ValidationExampleComponent } from './ui/validation-example/validation-e
     AppComponent,
     CounterComponent,
     CounterWithServiceComponent,
-
+    LoginComponent,
     HeaderComponent,
     FooterComponent,
     ValidationExampleComponent

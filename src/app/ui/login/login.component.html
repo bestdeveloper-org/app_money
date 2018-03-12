@@ -18,17 +18,21 @@
         <span class="span-or">or</span>
       </div>
 
-      <form role="form">
+      <form >
         <div class="form-group"
                   [ngClass]="{
                  'has-danger':email.valid && (email.dirty || email.touched),
                  'has-success': email.invalid && (email.dirty || email.touched)
                   }">
-          <label for="inputUsernameEmail">Username or email</label>
-          <input type="email"
+          <label for="email">Username or email</label>
+          <input type="text"
                  class="form-control"
-                 id="inputUsernameEmail"
-                 formControlName="email">
+                 id="email"
+                 name="email"
+                 required
+                 [(ngModel)]="ui.email"
+                 #email="ngModel"
+                 >
           <div class="form-control-feedback"
                *ngIf="email.errors && (email.dirty || email.touched)">
             <p *ngIf="email.errors.required">Email is required</p>
@@ -40,12 +44,14 @@
                  'has-danger': password.invalid && (password.dirty || password.touched),
                  'has-success': password.valid && (password.dirty || password.touched)}">
           <a class="pull-right" href="#">Forgot password?</a>
-          <label for="inputPassword">Password</label>
+          <label for="password">Password</label>
           <input type="password"
                  class="form-control"
-                 id="inputPassword"
-                 formControlName="password"
-                 required>
+                 id="password"
+                 required
+                 [(ngModel)]="ui.password"
+                 #password="ngModel"
+          >
           <div *ngIf="password.errors.required && (password.dirty || password.touched)" class="alert alert-danger">
                  <div [hidden]="!password.errors.required">Password is required</div>
           </div>

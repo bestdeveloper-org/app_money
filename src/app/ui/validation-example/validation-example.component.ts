@@ -22,7 +22,8 @@ export class ValidationExampleComponent implements OnInit {
     id:1,
     name:"",
     power:"",
-    alterEgo:""
+    alterEgo:"",
+    email:""
   }
 
   validateInput(ctrlName){
