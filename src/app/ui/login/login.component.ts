@@ -1,5 +1,5 @@
 import { Component, OnInit} from '@angular/core';
-import {FormControl, FormGroup, Validators} from "@angular/forms";
+import {User} from './user.interface';
 
 
 @Component({
@@ -8,32 +8,20 @@ import {FormControl, FormGroup, Validators} from "@angular/forms";
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  myform: FormGroup;
-  email: FormControl;
-  password: FormControl;
+  public user: User;
+
 
   ngOnInit() {
-    this.createFormControls();
-    this.createForm();
+  this.user = {
+    email:'',
+    password:''
   }
-
-  createFormControls() {
-      this.email = new FormControl('',[
-        Validators.required,
-        Validators.pattern("[/^ @]*@[^ @]*")]);
-      this.password = new FormControl('', [
-         Validators.required,
-         Validators.minLength(8)
-    ]);
-    }
-
-  createForm() {
-    this.myform = new FormGroup({
-        email: this.email,
-        password: this.password
-      });
   }
 }
+
+
+
+
 
 
 
