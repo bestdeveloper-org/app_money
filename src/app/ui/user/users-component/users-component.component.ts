@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import {NgForm} from "@angular/forms";
-
 @Component({
   selector: 'app-users-component',
   templateUrl: './users-component.component.html',
@@ -19,5 +18,4 @@ export class UsersComponentComponent implements OnInit {
     firstname : "",
     lastname : ""
   };
-
 }
