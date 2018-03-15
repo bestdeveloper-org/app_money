@@ -23,7 +23,6 @@ export class CounterComponent implements OnInit {
 
   scade(){
     this.valoare--;
-  }
-
+  } 
 
 }
