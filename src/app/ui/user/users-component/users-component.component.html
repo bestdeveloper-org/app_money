@@ -45,10 +45,10 @@
               <input type="email" id="email" class="form-control input-sm" required [email]="model.email!==''"
                      name="email" #email="ngModel" [(ngModel)]="model.email" placeholder="Email Address">
               <div *ngIf="email.errors && email.touched">
-                <!--<small [hidden]="!email.errors.required" class="text-danger">
+                <small [hidden]="!email.errors.required" class="text-danger">
                   Email is reguired
-                </small>-->
-                <small [hidden]="!email.errors.email">
+                </small>
+                <small [hidden]="!email.errors.email" class="text-danger">
                   Email is invalid
                 </small>
             </div>
@@ -56,18 +56,21 @@
             <div class="row">
               <div class="col-xs-6 col-sm-6 col-md-6">
                 <div class="form-group">
-                  <input type="password" class="form-control" name="password" placeholder="Password" [(ngModel)]="model.password"
+                  <input type="password" class="form-control" name="password" placeholder="Password"
+                         [(ngModel)]="model.password"
                          required validateEqual="confirmPassword" reverse="true" #password="ngModel">
                   <small [hidden]="password.valid || (password.pristine && !f.submitted)" class="text-danger">
                     Password is required
                   </small>
-               </div>
-              </div>
+                </div>
+                </div>
               <div class="col-xs-6 col-sm-6 col-md-6">
-                <div class="form-group" >
-                  <input type="password" class="form-control" name="confirmPassword" placeholder="ConfirmPassword" [(ngModel)]="model.confirm_password"
-                         required validateEqual="password" reverse="false" #confirmPassword="ngModel" >
-                  <small [hidden]="confirmPassword.valid || (confirmPassword.pristine && !f.submitted)" class="text-danger">
+                <div class="form-group">
+                  <input type="password" class="form-control" name="confirmPassword" placeholder="ConfirmPassword"
+                         [(ngModel)]="model.confirmPassword"
+                         required validateEqual="password" reverse="false" #confirmPassword="ngModel">
+                  <small [hidden]="confirmPassword.valid || (confirmPassword.pristine && !f.submitted)"
+                         class="text-danger">
                     Password mismatch
                   </small>
                 </div>
