@@ -13,7 +13,7 @@ export class ValidationExampleComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  }
+  }ng
 
 
   powers = ['Really Smart', 'Super Flexible', 'Weather Changer'];
