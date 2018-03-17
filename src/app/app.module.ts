@@ -22,7 +22,8 @@ import { LoginComponent } from './ui/login/login.component';
     HeaderComponent,
     FooterComponent,
     ValidationExampleComponent,
-    LoginComponent
+    LoginComponent,
+
   ],
   imports: [
     BrowserModule,
