@@ -21,6 +21,7 @@ import {HttpModule} from "@angular/http";
 import { TextMaskModule } from 'angular2-text-mask';
 import { Angular2SocialLoginModule } from 'angular2-social-login';
 import { CategoryItemComponent } from './category/category-item/category-item.component';
+import { CategoryListComponent } from './category/category-list/category-list.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { CategoryItemComponent } from './category/category-item/category-item.co
     ChangePasswordComponent,
     FileComponentComponent,
     CreateUserComponent,
-    CategoryItemComponent
+    CategoryItemComponent,
+    CategoryListComponent
   ],
   imports: [
     BrowserModule,
