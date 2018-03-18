@@ -49,10 +49,11 @@ export class FileComponentComponent  {
   }
 
   handleDrop(e) {
+    e.preventDefault();
     if(this.isCtrlDisabled()){
       return;
     }
-    e.preventDefault();
+
     this.dragging = false;
     this.handleInputChange(e);
   }

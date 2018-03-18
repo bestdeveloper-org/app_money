@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
+import {Category} from "../category";
 
 @Component({
   selector: 'app-category-item',
@@ -7,11 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategoryItemComponent implements OnInit {
 
+  @Input() category:Category;
+  @Output() notifyStartEdit: EventEmitter<Category> = new EventEmitter<Category>();
+
   age=5;
   person = {
     age:1,
     name:''
-  }
+  };
 
   constructor() { }
 
@@ -23,4 +27,7 @@ export class CategoryItemComponent implements OnInit {
     this.person.age ++;
   }
 
+  startEditCategory(){
+    this.notifyStartEdit.emit(this.category);
+  }
 }

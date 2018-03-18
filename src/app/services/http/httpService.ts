@@ -42,22 +42,15 @@ export class HttpWrapperService {
   async postJson(url, body): Promise<any> {
     try {
       let user : any = this.localStorageService.get('user');
-      // console.log(user);
 
       let headers = new Headers({'Content-Type': 'application/json'});
       headers.append('Authorization', user == null ? "" : user.token);
       let options = new RequestOptions({headers: headers});
       const apiUrl = this.serverUrl + url;
-      // console.log(apiUrl);
-      // console.log(body);
 
 
       const response = await this.http.post(apiUrl, body, options).toPromise();
       return response.json();
-      // return {
-      //   data: response.json(),
-      //   success: true
-      // };
     }
     catch (e) {
       return {

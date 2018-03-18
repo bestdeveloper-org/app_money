@@ -4,16 +4,21 @@
 <app-category-list></app-category-list>
 
 <nav>
-  <a routerLink="/reset-password">reset password</a>
-  <a routerLink="/login">Login</a>
+  <a *ngIf="!user" routerLink="/reset-password">reset password</a>
+  <a *ngIf="!user" routerLink="/login">Login</a>
   <a routerLink="/validationexample">Validation example</a>
   <a routerLink="/changePassword">Change Password</a>
 
-  <a routerLink="/createUser">Create User</a>
+  <a *ngIf="!user" routerLink="/createUser">Create User</a>
+
+  <a *ngIf="user" href="#" (click)="logout()">logout</a>
 
 
 
 
 </nav>
+
+<pre>{{user | json}} </pre>
 <router-outlet></router-outlet>
+
 

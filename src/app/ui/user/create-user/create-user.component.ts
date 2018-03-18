@@ -146,7 +146,7 @@ export class CreateUserComponent implements OnInit {
     if(!isOk){
       return;
     }
-
+debugger;
     let formData: FormData = new FormData();
 
     if(this.ui.companyLogo) {
