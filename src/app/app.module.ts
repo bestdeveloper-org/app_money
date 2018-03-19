@@ -10,10 +10,9 @@ import { FooterComponent } from './ui/footer/footer.component';
 import { ChangePasswordComponent } from './ui/user/change-password/change-password.component';
 import {LoginComponent} from './ui/user/login/login.component';
 import { AppRoutingModule } from './routing/app-routing.module';
-import { ValidationExampleComponent } from './ui/user/validation-example/validation-example.component';
+import { ValidationExampleComponent } from './ui/validation-example/validation-example.component';
 import { SuccessfulResetComponent } from './ui/user/successful-reset/successful-reset.component';
 import {FileComponentComponent} from "./ui/components/file-component/file-component.component";
-import {CreateUserComponent} from "./ui/user/create-user/create-user.component";
 import {HttpWrapperService} from "./services/http/httpService";
 import {PubSubService} from "./services/pubsub/pubsub";
 import { LocalStorageModule } from 'angular-2-local-storage';
@@ -21,7 +20,6 @@ import {HttpModule} from "@angular/http";
 import { TextMaskModule } from 'angular2-text-mask';
 import { Angular2SocialLoginModule } from 'angular2-social-login';
 import { CategoryItemComponent } from './category/category-item/category-item.component';
-import { CategoryListComponent } from './category/category-list/category-list.component';
 import {SocketService} from "./services/socket/socketService";
 
 
@@ -32,8 +30,8 @@ import {SocketService} from "./services/socket/socketService";
     CounterWithServiceComponent,
     HeaderComponent,
     FooterComponent,
-    SuccessfulResetComponent,
-    ValidationExampleComponent,
+    UsersComponentComponent,
+    ValidationExampleComponent
     LoginComponent,
     ChangePasswordComponent,
     FileComponentComponent,
