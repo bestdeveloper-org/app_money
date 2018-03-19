@@ -9,30 +9,10 @@ import {PubSubService} from "./services/pubsub/pubsub";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-
-  title = 'app';
-  user: any = null;
-  constructor(
-    private localStorageService: LocalStorageService,
-    private pubSubService: PubSubService
-  ){
-
-  }
-
   ngOnInit(): void {
-    this.user = this.localStorageService.get('user');
-
-    this.pubSubService.subscribe('login', (val)=>{
-      this.user = val;
-
-    });
   }
 
-  logout()
-  {
-    this.localStorageService.set('user',null);
-    this.user = null;
-  }
+
 
 
 }

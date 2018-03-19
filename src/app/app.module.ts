@@ -22,6 +22,7 @@ import { TextMaskModule } from 'angular2-text-mask';
 import { Angular2SocialLoginModule } from 'angular2-social-login';
 import { CategoryItemComponent } from './category/category-item/category-item.component';
 import { CategoryListComponent } from './category/category-list/category-list.component';
+import {SocketService} from "./services/socket/socketService";
 
 
 @NgModule({
@@ -52,7 +53,7 @@ import { CategoryListComponent } from './category/category-list/category-list.co
     TextMaskModule,
     Angular2SocialLoginModule
   ],
-  providers: [CounterService,HttpWrapperService,PubSubService],
+  providers: [CounterService,HttpWrapperService,PubSubService,SocketService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
