@@ -14,7 +14,7 @@ import {LoginComponent} from './ui/user/login/login.component';
 import { AppRoutingModule } from './routing/app-routing.module';
 import { ValidationExampleComponent } from './ui/validation-example/validation-example.component';
 import { SuccessfulResetComponent } from './ui/user/successful-reset/successful-reset.component';
-import {FileComponentComponent} from "./ui/components/file-component/file-component.component";
+
 import {HttpWrapperService} from "./services/http/httpService";
 import {PubSubService} from "./services/pubsub/pubsub";
 import { LocalStorageModule } from 'angular-2-local-storage';
@@ -35,10 +35,10 @@ import {SocketService} from "./services/socket/socketService";
     UsersComponentComponent,
     LoginComponent,
     ChangePasswordComponent,
-    FileComponentComponent,
+    ValidationExampleComponent
     CreateUserComponent,
     CategoryItemComponent,
-    CategoryListComponent
+
   ],
   imports: [
     BrowserModule,

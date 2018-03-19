@@ -1,4 +1,4 @@
-
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <div class="container">
   <div class="row">
 
@@ -18,48 +18,34 @@
         <span class="span-or">or</span>
       </div>
 
-      <form >
-        <div class="form-group"
-                  [ngClass]="{
-                 'has-danger':email.valid && (email.dirty || email.touched),
-                 'has-success': email.invalid && (email.dirty || email.touched)
-                  }">
-          <label for="email">Username or email</label>
-          <input type="text"
-                 class="form-control"
-                 id="email"
+      <form role="form" #f="ngForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="inputUsernameEmail">Email</label>
+          <input type="text" class="form-control" id="inputUsernameEmail"
                  name="email"
-                 required
-                 [(ngModel)]="ui.email"
+                 [ngModel]="user.email"
                  #email="ngModel"
-                 >
-          <div class="form-control-feedback"
-               *ngIf="email.errors && (email.dirty || email.touched)">
-            <p *ngIf="email.errors.required">Email is required</p>
-            <p *ngIf="email.errors.pattern">Email must contain @</p>
+                 required  pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$">
+          <div *ngIf="email.errors && (email.dirty || email.touched)" class="text-danger">
+            <small [hidden]="!email.errors">Email is required</small>
+            <small [hidden]="!email.errors.pattern">The email address must contain @ </small>
           </div>
-          </div>
-        <div class="form-group"
-                  [ngClass]="{
-                 'has-danger': password.invalid && (password.dirty || password.touched),
-                 'has-success': password.valid && (password.dirty || password.touched)}">
-          <a class="pull-right" href="#">Forgot password?</a>
-          <label for="password">Password</label>
-          <input type="password"
-                 class="form-control"
-                 id="password"
-                 required
-                 [(ngModel)]="ui.password"
-                 #password="ngModel"
-          >
-          <div *ngIf="password.errors.required && (password.dirty || password.touched)" class="alert alert-danger">
-                 <div [hidden]="!password.errors.required">Password is required</div>
-          </div>
-          <div *ngIf="password.errors.minLength && (password.dirty || password.touched)" class="alert alert-danger">
-            <div [hidden]="!password.errors.minLength">Password must be 8 characters long, we need another</div>
-          </div>
+
         </div>
-        <div class="checkbox pull-right">
+        <div class="form-group">
+          <a class="pull-right" href="#">Forgot password?</a>
+          <label for="inputPassword">Password</label>
+          <input type="password" class="form-control" id="inputPassword"
+                 name="password"
+                 [ngModel]="user.password"
+                 #password="ngModel" required minlength="10" maxlength="30" >
+           <div *ngIf="password.errors && (password.dirty || password.touched)" class="text-danger">
+              <small [hidden]="password.errors">Request password</small>
+              <small [hidden]="password.minlength">The email address must contain at least the 10 characters</small>
+           </div>
+        </div>
+
+       <div class="checkbox pull-right">
           <label>
             <input type="checkbox">
             Remember me </label>
@@ -68,6 +54,8 @@
           Log In
         </button>
       </form>
+
     </div>
+
   </div>
 </div>
