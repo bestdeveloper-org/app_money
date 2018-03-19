@@ -10,7 +10,6 @@ import {CategoryListComponent} from "../category/category-list/category-list.com
 
 
 const routes: Routes = [
-  { path: 'reset-password', component: ValidationExampleComponent },
   { path: 'successful-reset', component: SuccessfulResetComponent },
   { path: 'login', component: LoginComponent },
   { path: 'validationexample', component: ValidationExampleComponent },
