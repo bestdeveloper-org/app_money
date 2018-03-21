@@ -1,5 +1,6 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {NgForm} from "@angular/forms";
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-validation-example',
@@ -8,22 +9,18 @@ import {NgForm} from "@angular/forms";
 })
 export class ValidationExampleComponent implements OnInit {
 
-  @ViewChild('heroForm') currentForm: NgForm;
+  @ViewChild('passwordResetForm') currentForm: NgForm;
 
-  constructor() { }
+  constructor( private router: Router ) {  }
 
   ngOnInit() {
   }
 
-
-  powers = ['Really Smart', 'Super Flexible', 'Weather Changer'];
-
-  hero: any = {
-    id:1,
-    name:"",
-    power:"",
-    alterEgo:""
-  }
+  passRes: any = {
+    email:"",
+    newPassword:"",
+    confirmPassword:""
+  };
 
   validateInput(ctrlName){
     this.currentForm.controls[ctrlName].markAsDirty();
@@ -34,10 +31,12 @@ export class ValidationExampleComponent implements OnInit {
     debugger;
     let isFormValid = this.currentForm.valid;
 
-    isFormValid = this.validateInput("name");
+    isFormValid = this.validateInput("email");
     if(!isFormValid){
       return;
     }
+
+    this.router.navigate(['/successful-reset']);
 
   }
 
