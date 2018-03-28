@@ -29,6 +29,8 @@ import {CategoryListComponent} from "./category/category-list/category-list.comp
 import {FileComponentComponent} from "./ui/components/file-component/file-component.component";
 
 import { MomentModule } from 'angular2-moment';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -58,7 +60,9 @@ import { MomentModule } from 'angular2-moment';
     HttpModule,
     TextMaskModule,
     Angular2SocialLoginModule,
-    MomentModule
+    MomentModule,
+    BrowserAnimationsModule,
+    MatButtonModule, MatCheckboxModule
   ],
   providers: [CounterService,HttpWrapperService,PubSubService,SocketService],
   bootstrap: [AppComponent]
