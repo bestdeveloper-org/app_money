@@ -18,7 +18,11 @@
 <ul>
   <li *ngFor="let categ of categoryList">
 
-    <app-category-item [category]="categ" (notifyStartEdit)='startEditCategory($event)' ></app-category-item>
+    <app-category-item [category]="categ"
+                       (notifyStartEdit)='startEditCategory($event)'
+      (notifyStartDelete)='startDeleteCategory($event)'
+    >
+    </app-category-item>
 
     </li>
 </ul>

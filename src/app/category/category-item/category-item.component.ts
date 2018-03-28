@@ -10,6 +10,7 @@ export class CategoryItemComponent implements OnInit {
 
   @Input() category:Category;
   @Output() notifyStartEdit: EventEmitter<Category> = new EventEmitter<Category>();
+  @Output() notifyStartDelete: EventEmitter<Category> = new EventEmitter<Category>();
 
   age=5;
   person = {
@@ -38,6 +39,10 @@ export class CategoryItemComponent implements OnInit {
 
   onMouseLeave(ev){
     this.custClass  = '';
+  }
+
+  tryDelete(){
+    this.notifyStartDelete.emit(this.category);
   }
 
 }

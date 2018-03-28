@@ -56,6 +56,10 @@ export class CategoryListComponent implements OnInit {
     // this.selectedCategory = categoryItem;
   }
 
+  startDeleteCategory(item){
+    this.categoryList = this.categoryList.filter(el=>el.id != item.id);
+  }
+
   saveSelectedCategory(){
     let category = this.categoryList.find(it=>it.id === this.selectedCategory.id);
     category = {...category, name: this.selectedCategory.name};
