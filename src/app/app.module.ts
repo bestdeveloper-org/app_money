@@ -28,6 +28,7 @@ import {ValidationExampleComponent} from "./ui/user/validation-example/validatio
 import {CategoryListComponent} from "./category/category-list/category-list.component";
 import {FileComponentComponent} from "./ui/components/file-component/file-component.component";
 
+import { MomentModule } from 'angular2-moment';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import {FileComponentComponent} from "./ui/components/file-component/file-compon
     }),
     HttpModule,
     TextMaskModule,
-    Angular2SocialLoginModule
+    Angular2SocialLoginModule,
+    MomentModule
   ],
   providers: [CounterService,HttpWrapperService,PubSubService,SocketService],
   bootstrap: [AppComponent]

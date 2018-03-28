@@ -44,6 +44,7 @@ export class CategoryListComponent implements OnInit {
     }
     const reg = /[^A-Za-z0-9]+/g;
     this.category.id = UUID.UUID();
+    this.category.added = new Date();
     this.categoryList.push(this.category);
     this.saveCategoryToDatabase(this.category);
 

@@ -29,6 +29,7 @@
   <div class="row">
     <div class="col-md-10">
       <span (click)="startEditCategory(categ)">{{category.name}} </span>
+      {{category.added | amTimeAgo}}
     </div>
     <div class="col-md-2">
       <button class="category-delete" (click)="delete()">delete</button>
