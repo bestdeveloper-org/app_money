@@ -31,6 +31,8 @@ import {FileComponentComponent} from "./ui/components/file-component/file-compon
 import { MomentModule } from 'angular2-moment';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import { ButtonsModule, ModalModule  } from 'ngx-bootstrap';
+import { ConfirmPopupComponent } from './category/confirm-popup/confirm-popup.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,8 @@ import {MatButtonModule, MatCheckboxModule} from '@angular/material';
     SuccessfulResetComponent,
     ValidationExampleComponent,
     CategoryListComponent,
-    FileComponentComponent
+    FileComponentComponent,
+    ConfirmPopupComponent
   ],
   imports: [
     BrowserModule,
@@ -62,9 +65,14 @@ import {MatButtonModule, MatCheckboxModule} from '@angular/material';
     Angular2SocialLoginModule,
     MomentModule,
     BrowserAnimationsModule,
-    MatButtonModule, MatCheckboxModule
+    MatButtonModule, MatCheckboxModule,
+    ButtonsModule.forRoot(),
+    ModalModule.forRoot()
   ],
   providers: [CounterService,HttpWrapperService,PubSubService,SocketService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    ConfirmPopupComponent
+  ],
 })
 export class AppModule { }

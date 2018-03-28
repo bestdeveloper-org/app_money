@@ -3,6 +3,8 @@ import { UUID } from 'angular2-uuid';
 import {Category} from "../category";
 import {HttpWrapperService} from "../../services/http/httpService";
 import { Observable } from 'rxjs/Observable';
+import {BsModalRef, BsModalService} from "ngx-bootstrap";
+import {ConfirmPopupComponent} from "../confirm-popup/confirm-popup.component";
 
 @Component({
   selector: 'app-category-list',
@@ -16,8 +18,8 @@ export class CategoryListComponent implements OnInit {
 
   categoryList: Array<Category> = [];
   message:string ="";
-
-  constructor(private httpService: HttpWrapperService) { }
+  bsModalRef: BsModalRef;
+  constructor(private httpService: HttpWrapperService, private modalService: BsModalService) { }
 
   async ngOnInit() {
     this.categoryList = await this.getCategoriesFromDb();
@@ -57,7 +59,15 @@ export class CategoryListComponent implements OnInit {
   }
 
   startDeleteCategory(item){
-    this.categoryList = this.categoryList.filter(el=>el.id != item.id);
+    this.bsModalRef = this.modalService.show(ConfirmPopupComponent, {class: 'modal-lg'});
+    console.log(this.bsModalRef);
+    this.bsModalRef.content.title = 'New Client';
+
+    this.bsModalRef.content.action.take(1).subscribe((value) => {
+      console.log(value); // here you will get the value
+      this.categoryList = this.categoryList.filter(el=>el.id != item.id);
+    });
+    // this.categoryList = this.categoryList.filter(el=>el.id != item.id);
   }
 
   saveSelectedCategory(){
