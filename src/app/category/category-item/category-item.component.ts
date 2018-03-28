@@ -30,4 +30,14 @@ export class CategoryItemComponent implements OnInit {
   startEditCategory(){
     this.notifyStartEdit.emit(this.category);
   }
+
+  custClass = '';
+  onMouseEnter(ev){
+    this.custClass  = 'over';
+  }
+
+  onMouseLeave(ev){
+    this.custClass  = '';
+  }
+
 }
