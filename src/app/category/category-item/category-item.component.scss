@@ -1,0 +1,13 @@
+
+.category-item {
+  .category-delete{
+    display: none;
+  }
+
+  :hover {
+    color: red;
+    + .category-delete{
+      display: inline-block;
+    }
+  }
+}
