@@ -1,5 +1,5 @@
 <!--<p>-->
-  <!--category-item works!-->
+<!--category-item works!-->
 <!--</p>-->
 
 <!--varstae este {{person.age}}-->
@@ -9,7 +9,12 @@
 <!--<pre>{{category | json}} </pre>-->
 
 <div class="category-item">
-<span (click)="startEditCategory(categ)">{{category.name}} </span>
-  <button class="category-delete" (click)="delete()">delete</button>
-
+  <div class="row">
+    <div class="col-md-10">
+      <span (click)="startEditCategory(categ)">{{category.name}} </span>
+    </div>
+    <div class="col-md-2">
+      <button class="category-delete" (click)="delete()">delete</button>
+    </div>
+  </div>
 </div>

@@ -4,9 +4,9 @@
     display: none;
   }
 
-  :hover {
+  &:hover {
     color: red;
-    + .category-delete{
+     .category-delete{
       display: inline-block;
     }
   }
