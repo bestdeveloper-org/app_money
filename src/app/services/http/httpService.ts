@@ -6,7 +6,7 @@ import {Observable} from "rxjs";
 import {LocalStorageService} from "angular-2-local-storage";
 
 @Injectable()
-export class HttpWrapperService {
+export class  HttpWrapperService {
 
   url = 'http://localhost:4200/assets/data/books.json';
 

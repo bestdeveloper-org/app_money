@@ -10,6 +10,11 @@
 
   <a *ngIf="user" routerLink="/categorylist">Categories</a>
   <a  routerLink="/usersComponent">Users component</a>
+
+  <a *ngIf="user" href="#" (click)="logout()">Logout</a>
+
 </nav>
 
 {{userCount}}
+
+
