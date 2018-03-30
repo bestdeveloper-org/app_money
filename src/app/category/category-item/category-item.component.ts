@@ -4,30 +4,33 @@ import {Category} from "../category";
 @Component({
   selector: 'app-category-item',
   templateUrl: './category-item.component.html',
-  styleUrls: ['./category-item.component.css']
+  styleUrls: ['./category-item.component.scss']
 })
 export class CategoryItemComponent implements OnInit {
+  customClass: string = '';
 
-  @Input() category:Category;
+  @Input() category: Category;
   @Output() notifyStartEdit: EventEmitter<Category> = new EventEmitter<Category>();
-
-  age=5;
-  person = {
-    age:1,
-    name:''
-  };
+  @Output() notifyStartDelete: EventEmitter<Category> = new EventEmitter<Category>();
 
   constructor() { }
-
 
   ngOnInit() {
   }
 
-  maresteVarsta(){
-    this.person.age ++;
-  }
-
   startEditCategory(){
     this.notifyStartEdit.emit(this.category);
+  }
+
+  mouseEnter() {
+    this.customClass = 'over';
+  }
+
+  mouseLeave() {
+    this.customClass = '';
+  }
+
+  delete() {
+    this.notifyStartDelete.emit(this.category);
   }
 }

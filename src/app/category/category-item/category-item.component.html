@@ -9,4 +9,8 @@
 <!--<pre>{{category | json}} </pre>-->
 
 
-<span (click)="startEditCategory(categ)">{{category.name}} </span>
+<div class="category-item" (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()" [ngClass]="customClass">
+  <span (click)="startEditCategory($event)">{{ category.name }}</span>
+  {{ category.added | amTimeAgo }}
+  <button class="category-delete btn btn-danger" (click)="delete()">delete</button>
+</div>

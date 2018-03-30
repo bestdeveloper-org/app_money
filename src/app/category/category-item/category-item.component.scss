@@ -1,0 +1,15 @@
+.category-item {
+  .category-delete {
+    display: none;
+  }
+  color: yellowgreen;
+  .over {
+    display: inline;
+  }
+  &.over {
+    .category-delete {
+      display: inline-block;
+    }
+  }
+}
+

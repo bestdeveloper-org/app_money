@@ -1,7 +1,3 @@
-<p>
-  category-list works!
-</p>
-
 <button (click)="showAddCategoryScreen()"> show new category screen</button>
 
 <div *ngIf="category != null">
@@ -18,8 +14,10 @@
 <ul>
   <li *ngFor="let categ of categoryList">
 
-    <app-category-item [category]="categ" (notifyStartEdit)='startEditCategory($event)' ></app-category-item>
-
+    <app-category-item [category]="categ"
+                       (notifyStartEdit)='startEditCategory($event)'
+                       (notifyStartDelete)='delete($event)'>
+    </app-category-item>
     </li>
 </ul>
 
