@@ -10,10 +10,10 @@ import { CounterService } from './services/counter/counter.service';
 import { HeaderComponent } from './ui/header/header.component';
 import { FooterComponent } from './ui/footer/footer.component';
 import { ChangePasswordComponent } from './ui/user/change-password/change-password.component';
-import {LoginComponent} from './ui/user/login/login.component';
+import { LoginComponent } from './ui/user/login/login.component';
 import { AppRoutingModule } from './routing/app-routing.module';
 import { SuccessfulResetComponent } from './ui/user/successful-reset/successful-reset.component';
-
+import { MomentModule} from 'angular2-moment';
 import {HttpWrapperService} from "./services/http/httpService";
 import {PubSubService} from "./services/pubsub/pubsub";
 import { LocalStorageModule } from 'angular-2-local-storage';
@@ -22,11 +22,11 @@ import { TextMaskModule } from 'angular2-text-mask';
 import { Angular2SocialLoginModule } from 'angular2-social-login';
 import { CategoryItemComponent } from './category/category-item/category-item.component';
 import {SocketService} from "./services/socket/socketService";
-import {UsersComponentComponent} from "./ui/user/users-component/users-component.component";
-import {CreateUserComponent} from "./ui/user/create-user/create-user.component";
-import {ValidationExampleComponent} from "./ui/user/validation-example/validation-example.component";
-import {CategoryListComponent} from "./category/category-list/category-list.component";
-import {FileComponentComponent} from "./ui/components/file-component/file-component.component";
+import { UsersComponentComponent } from "./ui/user/users-component/users-component.component";
+import { CreateUserComponent} from "./ui/user/create-user/create-user.component";
+import { ValidationExampleComponent} from "./ui/user/validation-example/validation-example.component";
+import { CategoryListComponent } from "./category/category-list/category-list.component";
+import { FileComponentComponent } from "./ui/components/file-component/file-component.component";
 
 
 @NgModule({
@@ -45,6 +45,7 @@ import {FileComponentComponent} from "./ui/components/file-component/file-compon
     ValidationExampleComponent,
     CategoryListComponent,
     FileComponentComponent
+
   ],
   imports: [
     BrowserModule,
@@ -56,7 +57,8 @@ import {FileComponentComponent} from "./ui/components/file-component/file-compon
     }),
     HttpModule,
     TextMaskModule,
-    Angular2SocialLoginModule
+    Angular2SocialLoginModule,
+    MomentModule
   ],
   providers: [CounterService,HttpWrapperService,PubSubService,SocketService],
   bootstrap: [AppComponent]

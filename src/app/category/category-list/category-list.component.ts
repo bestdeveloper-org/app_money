@@ -17,6 +17,7 @@ export class CategoryListComponent implements OnInit {
   categoryList: Array<Category> = [];
   message:string ="";
 
+
   constructor(private httpService: HttpWrapperService) { }
 
   async ngOnInit() {
@@ -44,8 +45,10 @@ export class CategoryListComponent implements OnInit {
     }
     const reg = /[^A-Za-z0-9]+/g;
     this.category.id = UUID.UUID();
+    this.category.added = new Date
     this.categoryList.push(this.category);
     this.saveCategoryToDatabase(this.category);
+
 
     this.category = null;
   }
@@ -102,6 +105,9 @@ export class CategoryListComponent implements OnInit {
     arr.push(...dbResult.data );
 
     return arr;
+  }
+  startDeleteCategory(category){
+    this.categoryList = this.categoryList.filter(el => el._id !==category._id);
   }
 
 

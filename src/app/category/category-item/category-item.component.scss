@@ -1,0 +1,25 @@
+.category-item
+{
+  color: red;
+  .category-delete
+  {
+    display: none;
+  }
+  //&:hover {
+  //  color: green;
+  //  .category-delete {
+  //    display: inline-block;
+  //    color: blue;
+  //  }
+  //}
+  &.over{
+    .category-delete{
+      display: inline;
+    }
+  }
+
+}
+
+
+
+
