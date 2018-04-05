@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UUID } from 'angular2-uuid';
-import {Category} from "../category";
-import {HttpWrapperService} from "../../services/http/httpService";
+import { Category } from "../category";
+import { HttpWrapperService } from "../../services/http/httpService";
 import { Observable } from 'rxjs/Observable';
 
 @Component({
@@ -42,7 +42,7 @@ export class CategoryListComponent implements OnInit {
     {
       return;
     }
-    const reg = /[^A-Za-z0-9]+/g;
+    // const reg = /[^A-Za-z0-9]+/g;
     this.category.id = UUID.UUID();
     this.category.added = new Date();
     this.categoryList.push(this.category);

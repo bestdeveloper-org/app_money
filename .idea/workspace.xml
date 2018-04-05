@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="da6c38dd-425f-413d-9669-07573652a661" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/category/category-list/category-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/category/category-list/category-list.component.ts" afterDir="false" />
     </list>
     <ignored path="app_money.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="category-list.component.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="category-list.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/category/category-list/category-list.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="58" column="83" selection-start-line="58" selection-start-column="83" selection-end-line="58" selection-end-column="83" />
+            <state relative-caret-position="-638">
+              <caret line="4" column="45" lean-forward="true" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -51,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="category-item.component.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="category-item.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/category/category-item/category-item.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="243">
+              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -125,8 +126,8 @@
         <option value="$PROJECT_DIR$/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/src/app/category/category-list/category-list.component.html" />
         <option value="$PROJECT_DIR$/src/app/category/category-item/category-item.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/category/category-list/category-list.component.ts" />
         <option value="$PROJECT_DIR$/src/app/category/category-item/category-item.component.html" />
+        <option value="$PROJECT_DIR$/src/app/category/category-list/category-list.component.ts" />
       </list>
     </option>
   </component>
@@ -298,26 +299,26 @@
       <workItem from="1520326444130" duration="887000" />
       <workItem from="1521737956623" duration="211000" />
       <workItem from="1522337841455" duration="10778000" />
-      <workItem from="1522942317778" duration="1142000" />
+      <workItem from="1522942317778" duration="3892000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15642000" />
+    <option name="totallyTimeSpent" value="18392000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24824356" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14441842" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32994923" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3298969" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2113402" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -509,16 +510,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/category/category-list/category-list.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="58" column="83" selection-start-line="58" selection-start-column="83" selection-end-line="58" selection-end-column="83" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/category/category-list/category-list.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -538,8 +529,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/category/category-item/category-item.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="243">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/category/category-list/category-list.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-638">
+          <caret line="4" column="45" lean-forward="true" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
