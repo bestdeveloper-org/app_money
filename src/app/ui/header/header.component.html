@@ -1,5 +1,5 @@
 <nav>
-  <a routerLink="/resetPassword">reset password</a>
+  <a *ngIf="!user" routerLink="/reset-password">reset password</a>
   <a *ngIf="!user" routerLink="/login">Login</a>
   <a routerLink="/validationexample">Validation example</a>
   <a routerLink="/changePassword">Change Password</a>
@@ -9,7 +9,6 @@
   <a *ngIf="user" href="#" (click)="logout()">logout</a>
 
   <a *ngIf="user" routerLink="/categorylist">Categories</a>
-  <a  routerLink="/usersComponent">Users component</a>
 </nav>
 
-{{userCount}}
+<!-- {{userCount}} -->

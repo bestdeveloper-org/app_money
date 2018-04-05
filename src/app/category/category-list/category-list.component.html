@@ -1,10 +1,40 @@
 <p>
   category-list works!
 </p>
-
 <button (click)="showAddCategoryScreen()"> show new category screen</button>
 
-<div *ngIf="category != null">
+<div *ngIf="category">
+  <input type="text" [(ngModel)]="category.name">
+  <button (click)="add()">Save</button>
+  <span class="error"> {{ message }} </span>
+</div>
+
+<pre>{{ categoryList | json }}</pre>
+
+<ul>
+  <li *ngFor="let categ of categoryList">
+    <!-- <span (click)="startEditCategory(categ)">{{categ.name}}</span> -->
+    <app-category-item [category]='categ' 
+    (notifyStartEdit)='startEditCategory($event)'
+    (notifyStartDelete)='startDeleteCategory($event)'
+    >
+
+  </app-category-item>
+    
+  </li>
+</ul>
+
+<div *ngIf="selectedCategory">
+  <input type="text" [(ngModel)]="selectedCategory.name">
+  <button (click)="saveSelectedCategory()">Save</button>
+</div>
+<!-- <button (click)="saveCategoryToDatabase()"> Save To DB</button> -->
+
+
+
+<!-- 
+
+
   <input type="text" [(ngModel)]="category.name">
 
   <button (click)="add()"> SAve</button>
@@ -27,6 +57,4 @@
   <input type="text" [(ngModel)]="selectedCategory.name">
 
   <button (click)="saveSelectedCategory()"> Save</button>
-</div>
-
-<!--<button (click)="saveCategoryToDatabase()"> Save To DB</button>-->
+</div> -->

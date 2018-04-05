@@ -1,12 +1,24 @@
-<!--<p>-->
-  <!--category-item works!-->
-<!--</p>-->
+<!-- <p>
+  category-item works!
+</p> -->
+<!-- <input type="text" [(ngModel)]=person.name> -->
 
-<!--varstae este {{person.age}}-->
+<!-- varsta lui {{person.name}} este {{person.age}}
 
-<!--<button (click)="maresteVarsta()">mareste</button>-->
+<button (click)="maresteVarsta()">mareste</button>
+<pre>{{ category | json }}</pre> -->
+<div class="category-item"
+  [ngClass]="customClass"
+  (mouseenter)= "mouseEnter()"
+  (mouseleave)= "mouseLeave()"> 
+  <div class="row">
+    <div class="col-md-10">
+      <span (click)="startEditCategory(category)">
+        {{category.name}}
 
-<!--<pre>{{category | json}} </pre>-->
-
-
-<span (click)="startEditCategory(categ)">{{category.name}} </span>
+      </span>
+      {{category.aded | amTimeAgo}}
+      <button class="category-delete" (click)="delete()">delete</button>
+    </div>
+  </div>
+</div>

@@ -1,7 +1,16 @@
+<!--<app-counter></app-counter>-->
 
+<!--<app-counter-with-service></app-counter-with-service>-->
+<app-category-list></app-category-list>
+<!-- <app-header></app-header> -->
 
-<app-header></app-header>
+<nav>
+    <a routerLink="/resetPassword">reset password</a> 
+    <a *ngIf="!user" routerLink="/login">login</a>
+    <a routerLink="/validationExample">validation example</a>
+    <a routerLink="changePassword">change password</a>
+    <a *ngIf="!user" routerLink="/createUser">create user</a>
+</nav>
+<pre> {{user | json}}</pre>
 
 <router-outlet></router-outlet>
-<app-footer></app-footer>
-
