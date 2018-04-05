@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da6c38dd-425f-413d-9669-07573652a661" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.angular-cli.json" beforeDir="false" afterPath="$PROJECT_DIR$/.angular-cli.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/category/category-item/category-item.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/category/category-item/category-item.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/category/category-item/category-item.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/category/category-item/category-item.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/category/category-item/category-item.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/category/category-item/category-item.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/category/category-list/category-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/category/category-list/category-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/category/category-list/category-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/category/category-list/category-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/category/category.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/category/category.ts" afterDir="false" />
     </list>
     <ignored path="app_money.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,8 +33,8 @@
       <file leaf-file-name="category-list.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/category/category-list/category-list.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+            <state>
+              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -53,8 +42,8 @@
       <file leaf-file-name="category-list.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/category/category-list/category-list.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="58" column="83" lean-forward="true" selection-start-line="58" selection-start-column="83" selection-end-line="58" selection-end-column="83" />
+            <state>
+              <caret line="58" column="83" selection-start-line="58" selection-start-column="83" selection-end-line="58" selection-end-column="83" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -65,8 +54,8 @@
       <file leaf-file-name="category-item.component.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/category/category-item/category-item.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+            <state relative-caret-position="196">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -74,7 +63,7 @@
       <file leaf-file-name="category-item.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/category/category-item/category-item.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
+            <state>
               <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="45" />
               <folding>
                 <element signature="e#0#77#0" expanded="true" />
@@ -88,10 +77,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
-              <folding>
-                <element signature="e#2036#2430#0" />
-                <element signature="e#2443#2674#0" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -99,7 +84,7 @@
       <file leaf-file-name="category.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/category/category.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
+            <state>
               <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
             </state>
           </provider>
@@ -108,7 +93,7 @@
       <file leaf-file-name="category-item.component.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/category/category-item/category-item.component.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
+            <state>
               <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
             </state>
           </provider>
@@ -224,7 +209,7 @@
     <property name="SearchEverywhereHistoryKey" value="amTime&#9;null&#9;null&#10;app.mod&#9;FILE&#9;file://C:/Users/Maxim/Desktop/work/appMoney/src/app/app.module.ts&#10;category-list&#9;FILE&#9;file://C:/Users/Maxim/Desktop/work/appMoney/src/app/category/category-list/category-list.component.ts&#10;angular&#9;FILE&#9;file://C:/Users/Maxim/Desktop/work/appMoney/.angular-cli.json" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../app money server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../appMoneyServer" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
     <property name="node.js.selected.package.prettier" value="" />
@@ -313,27 +298,28 @@
       <workItem from="1520326444130" duration="887000" />
       <workItem from="1521737956623" duration="211000" />
       <workItem from="1522337841455" duration="10778000" />
+      <workItem from="1522942317778" duration="1142000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14500000" />
+    <option name="totallyTimeSpent" value="15642000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24824356" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24824356" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32994923" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32994923" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32993197" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3298969" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -366,22 +352,72 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" selection-start-column="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/category/category-list/category-list.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/category/category-list/category-list.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="58" column="83" lean-forward="true" selection-start-line="58" selection-start-column="83" selection-end-line="58" selection-end-column="83" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/category/category-item/category-item.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/category/category.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/category/category-item/category-item.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/category/category-item/category-item.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -401,9 +437,6 @@
           <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/ui/counter/counter.component.ts">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/ui/validation-example/validation-example.component.html" />
     <entry file="file://$PROJECT_DIR$/src/app/ui/validation-example/validation-example.component.ts" />
@@ -434,9 +467,6 @@
     <entry file="file://$PROJECT_DIR$/src/app/ui/validation-example/validation-example.component.html" />
     <entry file="file://$PROJECT_DIR$/node_modules/@angular/forms/src/directives/abstract_control_directive.d.ts" />
     <entry file="file://$PROJECT_DIR$/src/app/ui/validation-example/validation-example.component.ts" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -446,14 +476,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/category/category-item/category-item.component.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
+        <state>
           <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/category/category.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
+        <state>
           <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
         </state>
       </provider>
@@ -462,10 +492,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
-          <folding>
-            <element signature="e#2036#2430#0" />
-            <element signature="e#2443#2674#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -485,8 +511,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/category/category-list/category-list.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="58" column="83" lean-forward="true" selection-start-line="58" selection-start-column="83" selection-end-line="58" selection-end-column="83" />
+        <state>
+          <caret line="58" column="83" selection-start-line="58" selection-start-column="83" selection-end-line="58" selection-end-column="83" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
@@ -495,14 +521,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/category/category-list/category-list.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        <state>
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/category/category-item/category-item.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
+        <state>
           <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="45" />
           <folding>
             <element signature="e#0#77#0" expanded="true" />
@@ -512,8 +538,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/category/category-item/category-item.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+        <state relative-caret-position="196">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
