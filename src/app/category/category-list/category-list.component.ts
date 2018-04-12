@@ -65,8 +65,13 @@ export class CategoryListComponent implements OnInit {
 
     this.bsModalRef.content.action.take(1).subscribe((value) => {
       console.log(value); // here you will get the value
+
+      this.httpService.postJson("api/delete/category", item );
       this.categoryList = this.categoryList.filter(el=>el.id != item.id);
+
     });
+
+
     // this.categoryList = this.categoryList.filter(el=>el.id != item.id);
   }
 
