@@ -1,0 +1,31 @@
+
+.category-item{
+    color: rgb(174, 250, 23);
+    &.over
+    {
+      .category-delete
+      {  display:inline;
+      }
+    }
+    .category-delete
+    {
+        display:none;
+    }
+    .category-add
+    {
+        display:none;
+    }
+
+    //&:hover{
+        color:rgb(243, 13, 13);
+        .category-delete
+        {
+            display:inline-table;
+        }
+        color:blue
+        .category-add
+        {
+            display:inline-flex
+        }
+    //}
+}

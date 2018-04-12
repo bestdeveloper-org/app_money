@@ -9,4 +9,13 @@
 <!--<pre>{{category | json}} </pre>-->
 
 
-<span (click)="startEditCategory(categ)">{{category.name}} </span>
+<div class="category-item"
+[ngClass]="custClass"
+(mouseenter)="mouseEnter()"
+(mouseleave)="mouseLeave()"
+>
+  <span (click)="startEditCategory(categ)">{{category.name}} </span>
+  <button class="category-delete" (click)="delete()">delete</button>
+  <button class="category-add" (click)="add()">add</button>
+</div>
+

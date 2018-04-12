@@ -4,7 +4,7 @@ import {Category} from "../category";
 @Component({
   selector: 'app-category-item',
   templateUrl: './category-item.component.html',
-  styleUrls: ['./category-item.component.css']
+  styleUrls: ['./category-item.component.scss']
 })
 export class CategoryItemComponent implements OnInit {
 
@@ -30,4 +30,15 @@ export class CategoryItemComponent implements OnInit {
   startEditCategory(){
     this.notifyStartEdit.emit(this.category);
   }
+  custClass:string="";
+  added: Date;
+  mouseEnter()
+  {
+this.custClass="over";
+  }
+  mouseLeave(
+    {
+      this.custClass="";
+    }
+  )
 }
