@@ -1,0 +1,55 @@
+<!--<p>-->
+<!--category-item works!-->
+<!--</p>-->
+
+<!--varstae este {{person.age}}-->
+
+<!--<button (click)="maresteVarsta()">mareste</button>-->
+
+<!--<pre>{{category | json}} </pre>-->
+
+<!--v1-->
+<!--<div class="category-item">-->
+  <!--<div class="row">-->
+    <!--<div class="col-md-10">-->
+      <!--<span (click)="startEditCategory(categ)">{{category.name}} </span>-->
+    <!--</div>-->
+    <!--<div class="col-md-2">-->
+      <!--<button class="category-delete" (click)="delete()">delete</button>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->
+
+
+<!--v2-->
+<!--<div class="category-item "-->
+     <!--[ngClass]="custClass"-->
+     <!--(mouseenter)="onMouseEnter($event)"-->
+     <!--(mouseleave)="onMouseLeave($event)">-->
+  <!--<div class="row">-->
+    <!--<div class="col-md-10">-->
+      <!--<span (click)="startEditCategory(categ)">{{category.name}} </span>-->
+      <!--{{category.added | amTimeAgo}}-->
+    <!--</div>-->
+    <!--<div class="col-md-2">-->
+      <!--<button class="category-delete" (click)="delete()">delete</button>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->
+
+
+<!--v3-->
+<div class="category-item "
+     [ngClass]="custClass"
+     (mouseenter)="onMouseEnter($event)"
+     (mouseleave)="onMouseLeave($event)">
+  <div class="row">
+    <div class="col-md-10">
+      <span (click)="startEditCategory(categ)">{{category.name}} </span>
+      {{category.added | amTimeAgo}}
+    </div>
+    <div class="col-md-2">
+      <button class="category-delete" (click)="tryDelete()">delete</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+//v1
+//.category-item {
+//  .category-delete{
+//    display: none;
+//  }
+//
+//  &:hover {
+//    color: red;
+//     .category-delete{
+//      display: inline-block;
+//    }
+//  }
+//}
+
+
+//v2
+.category-item {
+  .category-delete{
+    display: none;
+  }
+
+  &.over{
+    color: red;
+    .category-delete{
+          display: inline-block;
+        }
+  }
+}
+
