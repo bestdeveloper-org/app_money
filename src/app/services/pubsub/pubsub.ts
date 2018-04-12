@@ -13,7 +13,7 @@ export class PubSubService {
 
   constructor() {
   }
-
+//s
   static getInstance() {
         if (PubSubService.instance == null) {
             PubSubService.instance = new PubSubService();
