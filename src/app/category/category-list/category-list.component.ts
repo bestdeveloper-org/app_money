@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { UUID } from 'angular2-uuid';
-import {Category} from "../category";
-import {HttpWrapperService} from "../../services/http/httpService";
+import {Category} from '../category';
+import {HttpWrapperService} from '../../services/http/httpService';
 import { Observable } from 'rxjs/Observable';
-import {BsModalRef, BsModalService} from "ngx-bootstrap";
-import {ConfirmPopupComponent} from "../confirm-popup/confirm-popup.component";
+import {BsModalRef, BsModalService} from 'ngx-bootstrap';
+import {ConfirmPopupComponent} from '../confirm-popup/confirm-popup.component';
 
 @Component({
   selector: 'app-category-list',
@@ -17,7 +17,7 @@ export class CategoryListComponent implements OnInit {
   selectedCategory: Category = null;
 
   categoryList: Array<Category> = [];
-  message:string ="";
+  message = '';
   bsModalRef: BsModalRef;
   constructor(private httpService: HttpWrapperService, private modalService: BsModalService) { }
 
@@ -26,21 +26,23 @@ export class CategoryListComponent implements OnInit {
   }
 
   showAddCategoryScreen()
+  // tslint:disable-next-line:one-line
   {
     this.category = new Category();
   }
 
 
-  add(){
-    const existentCategory = this.categoryList.find(it=>it.name === this.category.name);
-    if(existentCategory){
-      this.message = "Category exists";
+  add() {
+    const existentCategory = this.categoryList.find(it => it.name === this.category.name);
+    if (existentCategory) {
+      this.message = 'Category exists';
       return;
     }
-    this.message = "";
+    this.message = '';
 
 
-    if(this.category == null)
+    if (this.category == null)
+    // tslint:disable-next-line:one-line
     {
       return;
     }
@@ -53,33 +55,28 @@ export class CategoryListComponent implements OnInit {
     this.category = null;
   }
 
-  startEditCategory(categoryItem){
+  startEditCategory(categoryItem) {
     this.selectedCategory = {...categoryItem} ;
     // this.selectedCategory = categoryItem;
   }
 
-  startDeleteCategory(item){
+  startDeleteCategory(item) {
     this.bsModalRef = this.modalService.show(ConfirmPopupComponent, {class: 'modal-lg'});
     console.log(this.bsModalRef);
     this.bsModalRef.content.title = 'New Client';
 
     this.bsModalRef.content.action.take(1).subscribe((value) => {
       console.log(value); // here you will get the value
-
-      this.httpService.postJson("api/delete/category", item );
-      this.categoryList = this.categoryList.filter(el=>el.id != item.id);
-
+      this.categoryList = this.categoryList.filter(el => el.id !== item.id);
     });
-
-
     // this.categoryList = this.categoryList.filter(el=>el.id != item.id);
   }
 
-  saveSelectedCategory(){
-    let category = this.categoryList.find(it=>it.id === this.selectedCategory.id);
+  saveSelectedCategory() {
+    let category = this.categoryList.find(it => it.id === this.selectedCategory.id);
     category = {...category, name: this.selectedCategory.name};
 
-    const categoryIndex = this.categoryList.findIndex(it=>it.id === this.selectedCategory.id);
+    const categoryIndex = this.categoryList.findIndex(it => it.id === this.selectedCategory.id);
 
     this.categoryList[categoryIndex] = category;
 
@@ -88,37 +85,38 @@ export class CategoryListComponent implements OnInit {
     this.selectedCategory = null;
   }
 
+  // tslint:disable-next-line:one-line
   saveCategoryToDatabase(category){
-    if(this.categoryList.length === 0){
+    if (this.categoryList.length === 0) {
       return;
     }
 
-    var dataForServer = {
-      proxy:{
-        "method":"add_edit"
+    const dataForServer = {
+      proxy: {
+        'method': 'add_edit'
       },
-      "data":category
+      'data': category
     };
 
-    const dbResp =  this.httpService.postJson("api/category/generic",dataForServer);
+    const dbResp =  this.httpService.postJson('api/category/generic', dataForServer);
 
     console.log(dbResp);
 
   }
 
-  async getCategoriesFromDb() : Promise<Array<Category>> {
-        var dataForServer = {
-      proxy:{
-        "method":"get"
+  async getCategoriesFromDb(): Promise<Array<Category>> {
+        const dataForServer = {
+      proxy: {
+        'method': 'get'
       },
-      "data":{}
+      'data': {}
     };
 
-    const dbResult =  await this.httpService.postJson("api/category/generic",dataForServer);
+    const dbResult =  await this.httpService.postJson('api/category/generic', dataForServer);
 
 
     console.log(dbResult);
-    const arr : Category[] = [];
+    const arr: Category[] = [];
     arr.push(...dbResult.data );
 
     return arr;
