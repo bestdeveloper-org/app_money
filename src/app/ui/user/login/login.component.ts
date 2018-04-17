@@ -1,14 +1,14 @@
-import { PubSubService } from './../../../services/pubsub/pubsub';
-import { Component, OnInit } from '@angular/core';
-import { User } from './user.interface';
-import { HttpWrapperService } from '../../../services/http/httpService';
-import { Router } from '@angular/router';
-import { LocalStorageService } from 'angular-2-local-storage';
+import { PubSubService } from "./../../../services/pubsub/pubsub";
+import { Component, OnInit } from "@angular/core";
+import { User } from "./user.interface";
+import { HttpWrapperService } from "../../../services/http/httpService";
+import { Router } from "@angular/router";
+import { LocalStorageService } from "angular-2-local-storage";
 
 @Component({
-  selector: 'app-login',
-  templateUrl: 'login.component.html',
-  styleUrls: ['login.component.css']
+  selector: "app-login",
+  templateUrl: "login.component.html",
+  styleUrls: ["login.component.css"]
 })
 export class LoginComponent implements OnInit {
   // router: any;
@@ -17,8 +17,8 @@ export class LoginComponent implements OnInit {
   // public user: User;
 
   user: User = {
-    email: '',
-    password: ''
+    email: "",
+    password: ""
   };
 
   constructor(
@@ -37,26 +37,26 @@ export class LoginComponent implements OnInit {
     };
 
     this.serverData = await this.httpService.postJson(
-      'api/pub/security/login',
+      "api/pub/security/login",
       request
     );
-    if (this.serverData.success) {
+    if (!this.serverData.success) {
       return;
-
     }
 
     console.log(this.serverData);
-    this.createUserOk(this.serverData);
+    this.createLogin(this.serverData);
   }
 
-  createUserOk(
+  createLogin(
     // tslint:disable-next-line:member-ordering
     resp // tslint:disable-next-line:one-line
   ) {
-    this.localStorageService.add('user', resp.data);
-    this.pubSubService.publish('login', resp.data);
-    this.router.navigate(['/']);
-    // this.router.navigate(['/home'], { queryParams: { returnUrl: 'sd' }});
+    this.localStorageService.add("user", resp.data);
+    debugger;
+    this.pubSubService.publish("login", resp.data);
+    this.router.navigate(["/"]);
+    //   this.router.navigate(['/home'], { queryParams: { returnUrl: 'sd' }});
   }
 
   ngOnInit() {}

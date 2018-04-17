@@ -1,18 +1,19 @@
-import {Injectable} from '@angular/core';
-import {Http, Headers, Response, RequestOptions} from '@angular/http';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/toPromise';
-import {Observable} from "rxjs";
-import {LocalStorageService} from "angular-2-local-storage";
+import { Injectable } from "@angular/core";
+import { Http, Headers, Response, RequestOptions } from "@angular/http";
+import "rxjs/add/operator/map";
+import "rxjs/add/operator/toPromise";
+// tslint:disable-next-line:import-blacklist
+import { Observable } from "rxjs";
+import { LocalStorageService } from "angular-2-local-storage";
 
 @Injectable()
 export class HttpWrapperService {
+  url = "http://localhost:4200/assets/data/books.json";
 
-  url = 'http://localhost:4200/assets/data/books.json';
-
-  constructor(private http: Http,private localStorageService: LocalStorageService) {
-  }
-
+  constructor(
+    private http: Http,
+    private localStorageService: LocalStorageService
+  ) {}
 
   async getJson(url): Promise<any> {
     try {
@@ -21,8 +22,8 @@ export class HttpWrapperService {
         data: response.json(),
         success: true
       };
-    }
-    catch (e) {
+    } catch (e) {
+      // tslint:disable-next-line:one-line
       return {
         data: null,
         success: false
@@ -30,29 +31,24 @@ export class HttpWrapperService {
     }
   }
 
-  serverUrl = 'http://localhost:6002/';
-
+  // tslint:disable-next-line:member-ordering
+  serverUrl = "http://localhost:6002/";
 
   //http://www.angulartypescript.com/angular-2-http-example-typescript/
-  postObservables()
-  {
-
-  }
+  postObservables() {}
 
   async postJson(url, body): Promise<any> {
     try {
-      let user : any = this.localStorageService.get('user');
+      let user: any = this.localStorageService.get("user");
 
-      let headers = new Headers({'Content-Type': 'application/json'});
-      headers.append('Authorization', user == null ? "" : user.token);
-      let options = new RequestOptions({headers: headers});
+      let headers = new Headers({ "Content-Type": "application/json" });
+      headers.append("Authorization", user == null ? "" : user.token);
+      let options = new RequestOptions({ headers: headers });
       const apiUrl = this.serverUrl + url;
-
 
       const response = await this.http.post(apiUrl, body, options).toPromise();
       return response.json();
-    }
-    catch (e) {
+    } catch (e) {
       return {
         data: null,
         success: false
@@ -62,32 +58,30 @@ export class HttpWrapperService {
 
   async postFormData(url, formData) {
     try {
-      let user : any = this.localStorageService.get('user');
+      let user: any = this.localStorageService.get("user");
       console.log(user);
 
       const apiUrl = this.serverUrl + url;
       let headers = new Headers();
-      headers.append('Authorization', user == null ? "" : user.token);
+      headers.append("Authorization", user == null ? "" : user.token);
 
       /** No need to include Content-Type in Angular 4 */
-        //fu..
+      //fu..
       //headers.append('Content-Type', 'multipart/form-data');
       //headers.append('Accept', 'application/json');
       let options = new RequestOptions({ headers: headers });
-      const response = await this.http.post(apiUrl, formData, options).toPromise();
+      const response = await this.http
+        .post(apiUrl, formData, options)
+        .toPromise();
       return {
         data: response.json(),
         success: true
       };
-
-    }
-    catch (ex) {
+    } catch (ex) {
       return {
         data: ex,
         success: false
       };
     }
   }
-
-
 }
