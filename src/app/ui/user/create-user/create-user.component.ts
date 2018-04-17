@@ -146,7 +146,7 @@ export class CreateUserComponent implements OnInit {
     if(!isOk){
       return;
     }
-debugger;
+
     let formData: FormData = new FormData();
 
     if(this.ui.companyLogo) {
@@ -161,7 +161,7 @@ debugger;
       method: 'createUser',
     };
 
-    debugger;
+
     const newUI: any = { ...this.ui};
     delete  newUI.companyLogo;
     formData.append('data', JSON.stringify(newUI));
