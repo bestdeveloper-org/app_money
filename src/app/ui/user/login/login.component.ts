@@ -2,7 +2,7 @@ import { Component, OnInit} from '@angular/core';
 import {User} from './user.interface';
 import {HttpWrapperService} from "../../../services/http/httpService";
 import {PubSubService} from "../../../services/pubsub/pubsub";
-import {AuthService} from "angular2-social-login";
+// import {AuthService} from "angular2-social-login";
 import {LocalStorageService} from "angular-2-local-storage";
 import {Router} from "@angular/router";
 
@@ -52,7 +52,7 @@ export class LoginComponent implements OnInit {
 
 
   }
-}
+
 
 
 

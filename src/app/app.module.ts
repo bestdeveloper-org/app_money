@@ -33,6 +33,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import { ButtonsModule, ModalModule  } from 'ngx-bootstrap';
 import { ConfirmPopupComponent } from './category/confirm-popup/confirm-popup.component';
+import { EditCategoryItemComponent } from './category/category-item/edit-category-item/edit-category-item.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { ConfirmPopupComponent } from './category/confirm-popup/confirm-popup.co
     ValidationExampleComponent,
     CategoryListComponent,
     FileComponentComponent,
-    ConfirmPopupComponent
+    ConfirmPopupComponent,
+    EditCategoryItemComponent
   ],
   imports: [
     BrowserModule,

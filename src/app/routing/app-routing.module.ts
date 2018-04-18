@@ -8,16 +8,18 @@ import {ChangePasswordComponent} from "../ui/user/change-password/change-passwor
 import {CreateUserComponent} from "../ui/user/create-user/create-user.component";
 import {CategoryListComponent} from "../category/category-list/category-list.component";
 import {UsersComponentComponent} from "../ui/user/users-component/users-component.component";
+import {EditCategoryItemComponent} from "../category/category-item/edit-category-item/edit-category-item.component";
 
 
 const routes: Routes = [
   { path: 'successful-reset', component: SuccessfulResetComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'validationexample', component: ValidationExampleComponent },
+  { path: 'validationExample', component: ValidationExampleComponent },
   { path: 'changePassword', component: ChangePasswordComponent },
   { path: 'createUser', component: CreateUserComponent },
-  { path: 'categorylist', component: CategoryListComponent },
+  { path: 'categoryList', component: CategoryListComponent },
   { path: 'usersComponent', component: UsersComponentComponent},
+  { path: 'categoryList/categoryEdit', component: EditCategoryItemComponent}
 
 ];
 

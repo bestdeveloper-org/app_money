@@ -12,11 +12,11 @@ export class CategoryItemComponent implements OnInit {
   @Output() notifyStartEdit: EventEmitter<Category> = new EventEmitter<Category>();
   @Output() notifyStartDelete: EventEmitter<Category> = new EventEmitter<Category>();
 
-  age=5;
-  person = {
-    age:1,
-    name:''
-  };
+  // age=5;
+  // person = {
+  //   age:1,
+  //   name:''
+  // };
 
   constructor() { }
 
@@ -24,9 +24,9 @@ export class CategoryItemComponent implements OnInit {
   ngOnInit() {
   }
 
-  maresteVarsta(){
-    this.person.age ++;
-  }
+  // maresteVarsta(){
+  //   this.person.age ++;
+  // }
 
   startEditCategory(){
     this.notifyStartEdit.emit(this.category);

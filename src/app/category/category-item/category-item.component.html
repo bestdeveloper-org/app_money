@@ -45,7 +45,7 @@
      (mouseleave)="onMouseLeave($event)">
   <div class="row">
     <div class="col-md-10">
-      <span (click)="startEditCategory(categ)">{{category.name}} </span>
+      <span (click)="startEditCategory(category)"><a routerLink="/categoryList/categoryEdit">{{category.name}}</a></span>
       {{category.added | amTimeAgo}}
     </div>
     <div class="col-md-2">
