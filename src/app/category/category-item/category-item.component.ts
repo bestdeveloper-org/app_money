@@ -2,47 +2,47 @@ import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 import {Category} from "../category";
 
 @Component({
-  selector: 'app-category-item',
-  templateUrl: './category-item.component.html',
-  styleUrls: ['./category-item.component.scss']
+  selector: "app-category-item",
+  templateUrl: "./category-item.component.html",
+  styleUrls: ["./category-item.component.scss"]
 })
 export class CategoryItemComponent implements OnInit {
+  router: any;
+  @Input() category: Category;
+  @Output()
+  notifyStartEdit: EventEmitter<Category> = new EventEmitter<Category>();
+  @Output()
+  notifyStartDelete: EventEmitter<Category> = new EventEmitter<Category>();
 
-  @Input() category:Category;
-  @Output() notifyStartEdit: EventEmitter<Category> = new EventEmitter<Category>();
-  @Output() notifyStartDelete: EventEmitter<Category> = new EventEmitter<Category>();
-
-  age=5;
+  age = 5;
   person = {
-    age:1,
-    name:''
+    age: 1,
+    name: ""
   };
 
-  constructor() { }
+  constructor() {}
 
+  ngOnInit() {}
 
-  ngOnInit() {
+  maresteVarsta() {
+    this.person.age++;
   }
 
-  maresteVarsta(){
-    this.person.age ++;
+  goToProductDetails(id) {
+    debugger;
+    this.router.navigate(["categoryItemEdit", id]);
   }
 
-  startEditCategory(){
-    this.notifyStartEdit.emit(this.category);
+  custClass = "";
+  onMouseEnter(ev) {
+    this.custClass = "over";
   }
 
-  custClass = '';
-  onMouseEnter(ev){
-    this.custClass  = 'over';
+  onMouseLeave(ev) {
+    this.custClass = "";
   }
 
-  onMouseLeave(ev){
-    this.custClass  = '';
-  }
-
-  tryDelete(){
+  tryDelete() {
     this.notifyStartDelete.emit(this.category);
   }
-
 }

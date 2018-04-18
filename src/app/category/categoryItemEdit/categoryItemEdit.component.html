@@ -1,7 +1,10 @@
+<p>
+  categoryItemEdit works!
+</p>
 <div class="category-item " [ngClass]="custClass" (mouseenter)="onMouseEnter($event)" (mouseleave)="onMouseLeave($event)">
   <div class="row">
     <div class="col-md-10">
-      <span (click)="goToProductDetails(categ)">{{category.name}} </span>
+      <span (click)="startEditCategory(categ)">{{category.name}} </span>
       {{category.added | amTimeAgo}}
     </div>
     <div class="col-md-2">

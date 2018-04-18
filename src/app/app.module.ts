@@ -1,3 +1,4 @@
+import { CategoryItemEditComponent } from './category/categoryItemEdit/categoryItemEdit.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -27,7 +28,6 @@ import {CreateUserComponent} from "./ui/user/create-user/create-user.component";
 import {ValidationExampleComponent} from "./ui/user/validation-example/validation-example.component";
 import {CategoryListComponent} from "./category/category-list/category-list.component";
 import {FileComponentComponent} from "./ui/components/file-component/file-component.component";
-
 import { MomentModule } from 'angular2-moment';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
@@ -50,7 +50,8 @@ import { ConfirmPopupComponent } from './category/confirm-popup/confirm-popup.co
     ValidationExampleComponent,
     CategoryListComponent,
     FileComponentComponent,
-    ConfirmPopupComponent
+    ConfirmPopupComponent,
+    CategoryItemEditComponent
   ],
   imports: [
     BrowserModule,
