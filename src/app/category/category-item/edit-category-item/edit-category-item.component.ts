@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-edit-category-item',
@@ -6,9 +7,9 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./edit-category-item.component.scss']
 })
 export class EditCategoryItemComponent implements OnInit {
-  @Input() category: string;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute,
+              private router: Router,) { }
 
   ngOnInit() {
   }
