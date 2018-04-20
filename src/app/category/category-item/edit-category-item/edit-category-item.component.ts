@@ -11,11 +11,17 @@ export class EditCategoryItemComponent implements OnInit {
   constructor(private route: ActivatedRoute,
               private router: Router,) { }
 
+  order: any;
+
   ngOnInit() {
-    this.route.params.subscribe((params: Params) => {
-      let categoryId = params['id'];
-      console.log(categoryId);
-    });
+    this.route.queryParams
+      .filter(params => params.order)
+      .subscribe(params => {
+        console.log(params); // {order: "popular"}
+
+        this.order = params.order;
+        console.log(this.order); // popular
+      });
   }
 
 }

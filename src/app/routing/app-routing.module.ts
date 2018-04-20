@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'createUser', component: CreateUserComponent },
   { path: 'categoryList', component: CategoryListComponent },
   { path: 'usersComponent', component: UsersComponentComponent},
-  { path: 'categoryEdit/:id', component: EditCategoryItemComponent}
+  { path: 'categoryEdit', component: EditCategoryItemComponent}
 ];
 
 @NgModule({
