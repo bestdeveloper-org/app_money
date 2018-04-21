@@ -150,17 +150,19 @@ export class CategoryListComponent implements OnInit {
     };
     body.data = data;
 
-    const resp = await  this.httpService.postJson('api/category/generic', body);
+    const resp =   this.httpService.postJsonObs('api/category/generic', body)
+      .map((response : any) => response.json())
+      .subscribe((resp:any) => {
+        this.pager.count = resp.data.count;
+        this.pager.pageCount = 0;
 
-    this.pager.count = resp.data.count;
-    this.pager.pageCount = 0;
+        this.pager.pageCount = Math.floor(this.pager.count / this.pager.itemsOnPage)+1;
 
-    //if(this.pager.count>0){
-    this.pager.pageCount = Math.floor(this.pager.count / this.pager.itemsOnPage)+1;
-    //}
+        this.pager.items = resp.data.items;
+        this.categoryList = resp.data.items;
+      });
 
-    this.pager.items = resp.data.items;
-    this.categoryList = resp.data.items;
+
   }
 
   async pageChanged(data)
