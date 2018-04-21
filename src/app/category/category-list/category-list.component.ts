@@ -137,7 +137,7 @@ export class CategoryListComponent implements OnInit {
   };
 
 
-  async getPagedCategories() {
+  getPagedCategories() {
     const data= {
       pager: this.pager,
       filter: {

@@ -60,6 +60,8 @@ export class HttpWrapperService {
     }
   }
 
+  // https://codecraft.tv/courses/angular/http/http-with-observables/
+  //   https://medium.com/@tkssharma/build-simple-shopping-cart-with-angular-4-observables-subject-subscription-part-1-78b5a6d28ad5
   postJsonObs(url, body): Observable<Response> {
     let user : any = this.localStorageService.get('user');
 
