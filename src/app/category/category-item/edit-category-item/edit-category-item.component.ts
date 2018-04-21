@@ -50,7 +50,7 @@ export class EditCategoryItemComponent implements OnInit {
     };
 
     const response = await this.httpService.postJson('api/category/generic', dataForServer);
-    if (response.succes) {
+    if (response.success) {
       this.router.navigate(['/categoryList']);
     }
   }
