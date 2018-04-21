@@ -20,7 +20,7 @@ const routes: Routes = [
   { path: 'categoryList', component: CategoryListComponent },
   { path: 'usersComponent', component: UsersComponentComponent},
   { path: 'categoryEdit', component: EditCategoryItemComponent}
-];
+ ];
 
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],
