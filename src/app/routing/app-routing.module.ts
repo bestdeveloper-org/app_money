@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'createUser', component: CreateUserComponent },
   { path: 'categoryList', component: CategoryListComponent },
   { path: 'usersComponent', component: UsersComponentComponent},
-  { path: 'categoryList/categoryEdit', component: EditCategoryItemComponent}
+  { path: 'categoryEdit/:id', component: EditCategoryItemComponent}
 
 ];
 

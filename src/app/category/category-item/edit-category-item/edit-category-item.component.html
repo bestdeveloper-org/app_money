@@ -1,5 +1,12 @@
+{{ category | json }}
+
 <div class="container">
-  <p>
+  <p *ngIf="category">
     {{ category.name }}
+    <input type="text" class="form-control" [(ngModel)]="category.name">
   </p>
+
+  <button type="submit" class="btn btn-success" (click)="updateEntity()">
+    actualizeaza continutu in cauza
+  </button>
 </div>
