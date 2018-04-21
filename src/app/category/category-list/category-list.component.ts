@@ -22,7 +22,11 @@ export class CategoryListComponent implements OnInit {
   constructor(private httpService: HttpWrapperService, private modalService: BsModalService) { }
 
   async ngOnInit() {
-    this.categoryList = await this.getCategoriesFromDb();
+    // this.categoryList = await this.getCategoriesFromDb();
+
+    const resp = await this.getPagedCategories();
+    //this.categoryList = await this.getPagedCategories();
+
   }
 
   showAddCategoryScreen()
@@ -124,6 +128,45 @@ export class CategoryListComponent implements OnInit {
     return arr;
   }
 
+  pager = {
+    pageNo: 1,
+    itemsOnPage: 2,
+    pageCount: 0,
+    count: 0,
+    items: []
+  };
 
+
+  async getPagedCategories() {
+    const data= {
+      pager: this.pager,
+      filter: {
+      }
+    };
+
+    const body :any = {};
+    body.proxy = {
+      method: 'getCategoryPages',
+    };
+    body.data = data;
+
+    const resp = await  this.httpService.postJson('api/category/generic', body);
+
+    this.pager.count = resp.data.count;
+    this.pager.pageCount = 0;
+
+    //if(this.pager.count>0){
+    this.pager.pageCount = Math.floor(this.pager.count / this.pager.itemsOnPage)+1;
+    //}
+
+    this.pager.items = resp.data.items;
+    this.categoryList = resp.data.items;
+  }
+
+  async pageChanged(data)
+  {
+    this.pager.pageNo = data.page;
+    this.getPagedCategories();
+  }
 
 }

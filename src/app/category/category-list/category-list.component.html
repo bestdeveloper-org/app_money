@@ -35,3 +35,8 @@
 <button type="button" class="btn btn-primary">
   Single Button
 </button>
+
+
+<app-pager-wrapper [pager]="pager" (onPageChanged)="pageChanged($event)"></app-pager-wrapper>
+
+<pre>{{pager | json}} </pre>
