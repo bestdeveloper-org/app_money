@@ -34,6 +34,8 @@ import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import { ButtonsModule, ModalModule  } from 'ngx-bootstrap';
 import { ConfirmPopupComponent } from './category/confirm-popup/confirm-popup.component';
 import { EditCategoryItemComponent } from './category/category-item/edit-category-item/edit-category-item.component';
+import {PagerWrapperComponent} from "./components/pager-wrapper/pager-wrapper.component";
+import { PaginationModule } from 'ngx-bootstrap';
 
 @NgModule({
   declarations: [
@@ -52,7 +54,8 @@ import { EditCategoryItemComponent } from './category/category-item/edit-categor
     CategoryListComponent,
     FileComponentComponent,
     ConfirmPopupComponent,
-    EditCategoryItemComponent
+    EditCategoryItemComponent,
+    PagerWrapperComponent
   ],
   imports: [
     BrowserModule,
@@ -69,7 +72,8 @@ import { EditCategoryItemComponent } from './category/category-item/edit-categor
     BrowserAnimationsModule,
     MatButtonModule, MatCheckboxModule,
     ButtonsModule.forRoot(),
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    PaginationModule.forRoot()
   ],
   providers: [CounterService,HttpWrapperService,PubSubService,SocketService],
   bootstrap: [AppComponent],
