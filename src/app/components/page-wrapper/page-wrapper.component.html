@@ -1,0 +1,7 @@
+<div class="row">
+  <div class="col-xs-12 col-12">
+    <pagination [boundaryLinks]="true" [itemsPerPage]="pager.itemsOnPage" [totalItems]="pager.count"
+                [(ngModel)]="currentPage" (pageChanged)="pageChanged($event)" class="pagination-sm"
+                previousText="&lsaquo;" nextText="&rsaquo;" firstText="&laquo;" lastText="&raquo;"></pagination>
+  </div>
+</div>

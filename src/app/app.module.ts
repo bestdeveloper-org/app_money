@@ -31,9 +31,10 @@ import {FileComponentComponent} from "./ui/components/file-component/file-compon
 import { MomentModule } from 'angular2-moment';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
-import { ButtonsModule, ModalModule  } from 'ngx-bootstrap';
+import {ButtonsModule, ModalModule, PaginationConfig, PaginationModule} from 'ngx-bootstrap';
 import { ConfirmPopupComponent } from './category/confirm-popup/confirm-popup.component';
 import { EditCategoryItemComponent } from './category/category-item/edit-category-item/edit-category-item.component';
+import { PageWrapperComponent } from './components/page-wrapper/page-wrapper.component';
 
 @NgModule({
   declarations: [
@@ -52,9 +53,11 @@ import { EditCategoryItemComponent } from './category/category-item/edit-categor
     CategoryListComponent,
     FileComponentComponent,
     ConfirmPopupComponent,
-    EditCategoryItemComponent
+    EditCategoryItemComponent,
+    PageWrapperComponent
   ],
   imports: [
+    PaginationModule.forRoot(),
     BrowserModule,
     FormsModule,
     AppRoutingModule,
@@ -71,7 +74,11 @@ import { EditCategoryItemComponent } from './category/category-item/edit-categor
     ButtonsModule.forRoot(),
     ModalModule.forRoot()
   ],
-  providers: [CounterService,HttpWrapperService,PubSubService,SocketService],
+  providers: [CounterService,
+    HttpWrapperService,
+    PubSubService,
+    SocketService
+    ],
   bootstrap: [AppComponent],
   entryComponents: [
     ConfirmPopupComponent

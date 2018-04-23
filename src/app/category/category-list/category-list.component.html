@@ -29,9 +29,6 @@
   <button (click)="saveSelectedCategory()"> Save</button>
 </div>
 
-<!--<button (click)="saveCategoryToDatabase()"> Save To DB</button>-->
-<button mat-button>Click me! material button</button>
+<app-page-wrapper [pager]="pager" (onPageChanged)="pageChanged($event)"></app-page-wrapper>
 
-<button type="button" class="btn btn-primary">
-  Single Button
-</button>
+<pre>{{ pager | json}}</pre>
