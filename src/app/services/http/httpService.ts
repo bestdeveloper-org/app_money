@@ -60,6 +60,16 @@ export class HttpWrapperService {
     }
   }
 
+  postJsonObs(url, body): Observable<Response> {
+      let user : any = this.localStorageService.get('user');
+      let headers = new Headers({'Content-Type': 'application/json'});
+      headers.append('Authorization', user == null ? "" : user.token);
+      let options = new RequestOptions({headers: headers});
+      const apiUrl = this.serverUrl + url;
+
+      return this.http.post(apiUrl, body, options);
+    }
+
   async postFormData(url, formData) {
     try {
       let user : any = this.localStorageService.get('user');
